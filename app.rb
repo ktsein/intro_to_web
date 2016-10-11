@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'pry'
 
 set :session_secret, 'super secret'
 
@@ -37,3 +38,9 @@ end
 get '/cat-form' do
   erb(:cat_form)
 end
+
+# start a REPL session
+binding.pry
+
+# program resumes here (after pry session)
+puts "program resumes here.

@@ -5,6 +5,7 @@ ruby '2.3.0'
 group :development do
   gem 'shotgun'
   gem 'sinatra'
+  gem 'rspec-sinatra'
 end
 
 group :development, :test do
